@@ -1,0 +1,25 @@
+.wrapper {
+  padding: 0 32px;
+}
+
+.content {
+  max-width: 960px;
+  margin: auto;
+}
+
+.navbar {
+  color: #808080;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 32px 0;
+}
+
+.navbarLeft {
+}
+
+.navbarRight {
+  justify-self: right;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 24px;
+}
