@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={style.wrapper}>
       <footer className={style.content}>
-        © {new Date().getFullYear()} Dmitry Veremchuk
+        © {new Date().getFullYear()} Dima Veremchuk
       </footer>
     </div>
   );

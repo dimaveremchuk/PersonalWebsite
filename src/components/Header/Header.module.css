@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 0 32px;
+  padding: 0 16px;
 }
 
 .content {
@@ -8,10 +8,13 @@
 }
 
 .navbar {
-  color: #808080;
   display: grid;
   grid-template-columns: auto auto;
-  margin: 32px 0;
+  margin: 24px 0;
+}
+
+a {
+  color: var(--color-text-secondary);
 }
 
 .navbarLeft {
@@ -22,4 +25,14 @@
   display: grid;
   grid-template-columns: repeat(3, max-content);
   grid-gap: 24px;
+}
+
+@media screen and (min-width: 600px) {
+  .wrapper {
+    padding: 0 32px;
+  }
+
+  .navbar {
+    margin: 32px 0;
+  }
 }

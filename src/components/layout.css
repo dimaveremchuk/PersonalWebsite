@@ -1,11 +1,24 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 @font-face {
   font-family: Antarctica;
   src: url(../fonts/Antarctica Beta-VF.ttf) format('truetype');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-secondary: #808080;
+    --color-text-primary: #ffffff;
+    --color-accent: #e25802;
+    --color-background: #1f1f1f;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text-secondary: #808080;
+    --color-text-primary: #1f1f1f;
+    --color-accent: #e25802;
+    --color-background: #efefef;
+  }
 }
 
 html, body, div, span, applet, object, iframe,
@@ -28,6 +41,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
         box-sizing: border-box;
+        background-color: var(--color-background);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
